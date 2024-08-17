@@ -4,7 +4,7 @@
     "displayName": "CSerial",
     "keywords": [ "unity" ],
     "license": "Unlicense",
-    "name": "com.rizwan.CSerial",
+    "name": "com.rizwan.cserial",
     "repository": "github:Risu-swift/Unity-CSerial",
     "unity": "2022.3",
     "unityRelease": "31f1",
