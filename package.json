@@ -1,0 +1,12 @@
+{
+    "author": "Mohammed Rizwan",
+    "description": "Serial communication for unity based on CSerial",
+    "displayName": "CSerial",
+    "keywords": [ "unity" ],
+    "license": "Unlicense",
+    "name": "com.rizwan.CSerial",
+    "repository": "github:Risu-swift/Unity-CSerial",
+    "unity": "2022.3",
+    "unityRelease": "31f1",
+    "version": "0.0.1"
+  }
