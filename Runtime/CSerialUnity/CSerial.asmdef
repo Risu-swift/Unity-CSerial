@@ -1,0 +1,17 @@
+{
+    "name": "CSerial",
+    "rootNamespace": "",
+    "references": [
+        "CSerialBindings",
+        "ThreadDispatcher"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+    "name": "CSerial.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:39a05f34a0c4b384f8ef7bed5bffc075"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
