@@ -53,6 +53,11 @@ public class SerialManager : MonoBehaviour
         serialPortHandler.Connect();
     }
 
+    public void Write(string data)
+    {
+      serialPortHandler.Write(data);
+    }
+
     /*void HandleDataReceived(string data)
     {
         Debug.Log("Received data: " + data);
