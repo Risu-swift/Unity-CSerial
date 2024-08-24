@@ -48,22 +48,22 @@ public class SerialManager : MonoBehaviour
     public void InitializeSerialPortHandler()
     {
         serialPortHandler = new SerialPortHandler(_portName, _baudRate);
-       // serialPortHandler.listener.OnDataReceived += HandleDataReceived;
-       // serialPortHandler.OnConnectionStatusChanged += HandleConnectionStatusChanged; // Subscribe to connection status changes
+        serialPortHandler.listener.OnDataReceived += HandleDataReceived;
+        serialPortHandler.OnConnectionStatusChanged += HandleConnectionStatusChanged; // Subscribe to connection status changes
         serialPortHandler.Connect();
     }
 
-    /*void HandleDataReceived(string data)
+    void HandleDataReceived(string data)
     {
-        Debug.Log("Received data: " + data);
+       // Debug.Log("Received data: " + data);
         onDataReceived.Invoke(data);
     }
 
     void HandleConnectionStatusChanged(bool isConnected)
     {
-        Debug.Log("Connection status changed: " + isConnected);
+        //Debug.Log("Connection status changed: " + isConnected);
         onConnectionStatusChanged.Invoke(isConnected);
-    }*/
+    }
 
     void OnDestroy()
     {
