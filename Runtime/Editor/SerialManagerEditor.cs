@@ -2,6 +2,8 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
+#if UNITY_EDITOR
+
 [CustomEditor(typeof(SerialManager))]
 public class SerialManagerEditor : Editor
 {
@@ -170,3 +172,4 @@ public class SerialManagerEditor : Editor
         return result;
     }
 }
+#endif
