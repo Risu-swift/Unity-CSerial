@@ -37,7 +37,7 @@ public class SerialManager : MonoBehaviour
         }
     }
 
-    void Start()
+    public void Init()
     {
         if (Application.isPlaying)
         {
@@ -95,7 +95,7 @@ public class SerialManager : MonoBehaviour
             _portName = portName;
             if (Application.isPlaying)
             {
-                ReconnectSerialPort();
+                //ReconnectSerialPort();
             }
         }
     }
@@ -107,7 +107,7 @@ public class SerialManager : MonoBehaviour
             _baudRate = baudRate;
             if (Application.isPlaying)
             {
-                ReconnectSerialPort();
+               // ReconnectSerialPort();
             }
         }
     }

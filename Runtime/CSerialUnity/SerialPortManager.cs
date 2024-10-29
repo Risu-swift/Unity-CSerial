@@ -12,11 +12,16 @@ public class SerialPortHandler
     public bool isConnected = false;
     private Thread updateThread;
     private bool isRunning = true;
-
+    private string portName;
+    private int baudRate;
+    
     public event Action<bool> OnConnectionStatusChanged; // New event for connection status
 
     public SerialPortHandler(string portName, int baudRate)
     {
+        this.portName = portName;
+        this.baudRate = baudRate;
+        
         serialPort = new CSerialPort();
         listener = new SerialListener(serialPort);
 
@@ -51,6 +56,7 @@ public class SerialPortHandler
 
             serialPort.flushBuffers();
             serialPort.close();
+            serialPort = null;
             isConnected = false;
             OnConnectionStatusChanged?.Invoke(isConnected); // Notify disconnection status
         }
