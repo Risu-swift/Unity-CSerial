@@ -35,6 +35,11 @@ public class SerialPortHandler
         if (!isConnected)
         {
             isConnected = serialPort.open();
+            if(isConnected)
+            {
+                serialPort.setDtr(true);
+                serialPort.setRts(true);
+            }
             serialPort.flushBuffers();
             serialPort.connectReadEvent(listener);
             OnConnectionStatusChanged?.Invoke(isConnected); // Notify connection status
