@@ -84,6 +84,11 @@ public class SerialPortHandler
             if (serialPortInfo.Count >= 1 && !isConnected)
             {
                 isConnected = serialPort.open();
+                if(isConnected)
+                {
+                    serialPort.setDtr(true);
+                    serialPort.setRts(true);
+                }
                 OnConnectionStatusChanged?.Invoke(isConnected); // Notify connection status
             }
 
